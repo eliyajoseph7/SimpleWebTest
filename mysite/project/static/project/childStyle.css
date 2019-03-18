@@ -1,0 +1,155 @@
+	header {
+	  position: relative;
+	  background-color: black;
+	  height: 75vh;
+	  min-height: 25rem;
+	  width: 100%;
+	  overflow: hidden;
+	}
+
+	header video {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  min-width: 100%;
+	  min-height: 100%;
+	  width: auto;
+	  height: auto;
+	  z-index: 0;
+	  opacity: 0.5;
+	  -ms-transform: translateX(-50%) translateY(-50%);
+	  -moz-transform: translateX(-50%) translateY(-50%);
+	  -webkit-transform: translateX(-50%) translateY(-50%);
+	  transform: translateX(-50%) translateY(-50%);
+	}
+
+	header .container {
+	  position: relative;
+	  z-index: 2;
+	}
+
+	header .overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-color: black;
+	  opacity: 0.5;
+	  z-index: 1;
+	}
+
+	@media (pointer: coarse) and (hover: none) {
+	  header {
+	    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+	  }
+	  header video {
+	    display: none;
+	  }
+	}
+	 .headinfo h1{
+	   	font-size: 5em;
+	   	color: white;
+	   }
+
+		
+		.navbar-nav{
+			width: 100%;background-color: rgb(100,225,100);
+		}
+		.nav-link{
+			color: gold;
+			
+		}
+		
+	  
+	    /* Style the top navigation bar */
+	    .topnav {
+	        overflow: hidden;
+	        background-color: #33AD36;
+	        width: 100%;
+	        position: sticky;
+	        position: -webkit-sticky;
+	        top: 0;
+	        z-index: 1;
+	    }
+
+	    /* Style the topnav links */
+	    .topnav a {
+	        float: left;
+	        display: block;
+	        color: gold;
+	        text-align: center;
+	        padding: 14px 16px;
+	        text-decoration: none;
+	        font-size: 18px;
+	         font-family: "Times New Roman", Times, serif;
+	         margin: 7px;
+	    }
+
+	    /* Change color on hover */
+	    .topnav a:hover {
+	        
+	        color: yellow;
+	    }
+	    a.active {
+	      background-color: #4CAF50;
+	      color: white;
+	    }
+	   a.active:hover{
+	    background-color: #4CAF50;
+	    color: #fff;
+	   }
+	   .topnav .icon {
+	     display: none;
+	   }
+
+	   @media screen and (max-width: 600px) {
+	     .topnav a:not(:first-child) {display: none;}
+	     .topnav a.icon {
+	       float: right;
+	       display: block;
+	     }
+	   }
+
+	   @media screen and (max-width:600px) {
+	     .topnav.responsive {position: relative;}
+	     .topnav.responsive .icon {
+	       position: absolute;
+	       right: 0;
+	       top: 0;
+	     }
+	     .topnav.responsive a {
+	       float: none;
+	       display: block;
+	       
+	     }
+	   }
+		
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+		    float: left;
+		    width: 45%;
+		    padding: 10px;
+		    margin: 2%;
+		    border-radius: 5%;
+		    
+		}
+		.column img{
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		    }
+		}
